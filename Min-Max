@@ -1,7 +1,7 @@
 MinMax
 
 print(sum(arr) - max(arr), sum(arr)-min(arr))
-
+-----------------------------------------------------
 max_sum=0
 min_sum=0
 for i in star:
@@ -12,3 +12,15 @@ for i in star:
         
 print(max_sum)
 print(min_sum)
+
+-----------------------------------------------------
+
+def miniMaxSum(arr):
+    # Write your code here
+    min_sum=0
+    max_sum=0
+    arr=sorted(arr)
+    for i in range(4):
+        min_sum+=arr[i]
+        max_sum+=arr[i+1]
+    print(min_sum,max_sum)  
