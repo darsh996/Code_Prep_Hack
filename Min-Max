@@ -1,0 +1,14 @@
+MinMax
+
+print(sum(arr) - max(arr), sum(arr)-min(arr))
+
+max_sum=0
+min_sum=0
+for i in star:
+    if(i != min(star)):
+        max_sum+=i
+    if(i != max(star)):
+        min_sum+=i
+        
+print(max_sum)
+print(min_sum)
