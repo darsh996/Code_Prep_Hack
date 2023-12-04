@@ -6,5 +6,8 @@ def matchingStrings(strings, queries):
             cnt = strings.count(x)
             result.append(cnt)
     return( result)  
+
+-------------------------------
+return [strings.count(x) for x in queries]
    
     
