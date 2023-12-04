@@ -1,0 +1,10 @@
+def matchingStrings(strings, queries):
+    # Write your code here
+    result=[]
+    for x in queries:
+        if x.isalpha():
+            cnt = strings.count(x)
+            result.append(cnt)
+    return( result)  
+   
+    
