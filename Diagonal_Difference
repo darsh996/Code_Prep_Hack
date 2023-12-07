@@ -1,0 +1,15 @@
+def diagonalDifference(arr):
+    # Write your code here
+    lsum =0
+    rsum=0
+    for i in range(n):
+        for j in range(n):
+            if(i==j):
+                lsum = lsum + arr[i][j]
+    
+    for x in range(n):
+        for y in range(n):
+            if((x+y)==(n-1)):
+                rsum = rsum+arr[x][y]
+
+    return abs (lsum-rsum)        
