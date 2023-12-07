@@ -1,0 +1,4 @@
+def pangrams(s):
+    # Write your code here
+    s = set(char.lower() for char in s if char.isalpha())
+    return 'pangram' if len(s) == 26 else 'not pangram'
