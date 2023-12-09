@@ -1,0 +1,10 @@
+def twoArrays(k, A, B):
+    # Write your code here
+   
+    # Write your code here
+    sorted_A = sorted(A)
+    sorted_B = sorted(B, reverse=True)
+    for i in range(len(A)):
+        if sorted_A[i] + sorted_B[i] < k:
+            return 'NO'
+    return 'YES'
